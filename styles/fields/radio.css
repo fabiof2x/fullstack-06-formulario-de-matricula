@@ -1,4 +1,4 @@
-label + .radio-wrapper {
+label+.radio-wrapper {
   margin-top: 1rem;
 }
 
@@ -39,19 +39,21 @@ label + .radio-wrapper {
     left: .5rem;
   }
 
-  &:hover, &:focus-within {
+  &:hover,
+  &:focus-within {
     border: 1px solid var(--stroke-highlight);
 
     & .radio-image {
       background-image: url(../../assets/icons/radio-hover.svg);
     }
+  }
 
-    &:has(:checked) {
-      border: 2px solid var(--stroke-highlight);
+  &:has(:checked) {
+    border: 2px solid var(--stroke-highlight);
 
-      & .radio-image {
-        background-image: url(../../assets/icons/radio-checked.svg);
-      }
+    & .radio-image {
+      background-image: url(../../assets/icons/radio-checked.svg);
     }
   }
+}
 }
